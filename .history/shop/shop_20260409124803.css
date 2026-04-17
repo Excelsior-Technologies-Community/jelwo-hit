@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Nav */
+.nav {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #e4e4e7;
+}
+
+.nav-inner {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo img {
+    width: 110px;
+    background: none;
+    border: none;
+    margin-top: 2px;
+    position: relative;
+    margin-left: -1rem;
+}
+
+.nav-sep {
+    position: absolute;
+    margin-left: 7.25rem;
+    font-size: 1.55rem;
+    margin-bottom: 0.25rem;
+    color: #e4e4e7;
+    font-weight: 100;
+}
+
+.nav-tagline {
+    position: absolute;
+    margin-left: 9rem;
+    color: #71717a;
+    font-size: 0.875rem;
+}
+
+.nav-actions {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: -2.5rem;
+}
+
+@media (min-width: 1024px) {
+    .nav-actions {
+        display: flex;
+    }
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.nav-search input {
+    border: 1px solid #a1a1aa;
+    font-size: 0.875rem;
+    width: 20rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    border-radius: 9999px;
+}
+
+.nav-search-icon {
+    margin-left: -2rem;
+    cursor: pointer;
+}
+
+.nav-btn {
+    padding: 0.75rem 1rem;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.375rem;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn i {
+    margin-right: 0.3rem;
+}
+
+.nav-btn:hover {
+    color: #b98410;
+}
+
+.nav-mobile-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+@media (min-width: 1024px) {
+    .nav-mobile-btn {
+        display: none;
+    }
+}
+
+.nav-mobile {
+    display: none;
+    padding: 1rem;
+    background: white;
+    border-top: 1px solid #e4e4e7;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nav-mobile.open {
+    display: flex;
+}
+
+@media (min-width: 1024px) {
+    .nav-mobile {
+        display: none !important;
+    }
+}
+
+.nav-mobile-link {
+    font-weight: 600;
+    color: #52525b;
+    font-size: 1.125rem;
+}
+
+.nav-mobile-link:hover {
+    text-decoration: underline;
+}
+
+/* Main content - offset for fixed nav */
+.main-content {
+    margin-top: 5.375rem;
+}
+
+/* Home top bar */
+.home-topbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+}
+
+.topbar-link {
+    display: flex;
+    font-weight: 600;
+}
+
+.topbar-link i {
+    margin-top: 0.125rem;
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+    color: #b98410;
+}
+
+.topbar-nav {
+    display: flex;
+    gap: 1.75rem;
+    font-weight: 600;
+    list-style: none;
+}
+
+.topbar-nav a:hover {
+    color: #b98410;
+}
+
+.topbar-right {
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: flex;
+}
+
+.topbar-right i {
+    margin-top: 0;
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+    color: #b98410;
+}
+
+
+/* collection */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    background-image: url('https://jelwo.myshopify.com/cdn/shop/files/jewelry-3-breadcrumb.jpg?v=1742473987&width=1920');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.38);
+}
+
+.banner__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.banner__breadcrumb {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.80);
+    margin: 0 0 8px;
+    font-family: sans-serif;
+}
+
+.banner__title {
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin: 0;
+    color: #ffffff;
+    font-family: Georgia, serif;
+}
+
+
+
+/* product */
+.product-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 36px 40px 32px;
+    width: 320px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 22px;
+    left: 26px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #888;
+    letter-spacing: 0.04em;
+}
+
+
+
+
+/* Footer */
+.footer {
+    background: #F5F3F2;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.footer-grid {
+    padding: 1.25rem;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+.footer-col {
+    flex: 1;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer-col {
+        margin-top: 0;
+    }
+}
+
+.footer-col h4,
+.footer-col h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #b98410;
+    margin-bottom: 1rem;
+}
+
+.footer-col img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.footer-col p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #71717a;
+    display: flex;
+}
+
+.footer-col p i {
+    margin-top: 0.375rem;
+    margin-right: 0.25rem;
+    color: #b98410;
+}
+
+.footer-contact {
+    margin-top: 1rem;
+}
+
+.footer-contact div {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0.75rem;
+    color: #71717a;
+    font-weight: 600;
+}
+
+.footer-contact i {
+    font-size: 1.25rem;
+    color: #b98410;
+}
+
+.footer-col ul {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #71717a;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-col ul a:hover {
+    color: #b98410;
+}
+
+.footer-bottom-row {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7.5rem;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.footer-social li a {
+    display: flex;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 1px solid #d4d4d8;
+    color: #52525b;
+}
+
+.footer-social li a:hover {
+    background: #b98410;
+    color: white;
+}
+
+.footer-subscribe {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 2.5rem;
+}
+
+.footer-subscribe h1 {
+    color: #b98410;
+    margin-right: 1.25rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.footer-subscribe input {
+    margin-right: 0.75rem;
+    border: 1px solid #a1a1aa;
+    font-size: 0.875rem;
+    width: 20rem;
+    height: 3.5rem;
+    padding-left: 1rem;
+    border-radius: 9999px;
+}
+
+.footer-subscribe button {
+    width: 8.75rem;
+    height: 3.5rem;
+    font-weight: 600;
+    border: 1px solid;
+    border-radius: 9999px;
+    color: white;
+    background: #b98410;
+    cursor: pointer;
+}
+
+.footer-hr {
+    border-color: #71717a;
+    margin-top: 2.5rem;
+    opacity: 0.1;
+}
+
+.footer-copy {
+    max-width: 72rem;
+    margin: 0 auto;
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-copy {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer-copy p {
+    font-size: 0.875rem;
+    color: #71717a;
+}
+
+.footer-copy img {
+    width: 14rem;
+}
+
+@media (min-width: 768px) {
+    .footer-copy img {
+        width: 20rem;
+    }
+}

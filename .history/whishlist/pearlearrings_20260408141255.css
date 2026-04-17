@@ -1,0 +1,31 @@
+.image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.pearlearring_image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.pearlearring-swiper {
+    width: 100%;
+}
+
+.pearlearring-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #333;
+    z-index: 1;
+}
+.sta

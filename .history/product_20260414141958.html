@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a class="nav-logo" href="index.html"><img
+                    src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-logo.png?v=1744805986&width=500"
+                    alt="" /></a>
+            <span class="nav-sep">|</span>
+            <h1 class="nav-tagline">Free UK standard delivery on all orders.</h1>
+            <div class="nav-actions">
+                <form class="nav-search">
+                    <input type="text" placeholder="Search product..." />
+                    <i class="fa-solid fa-search nav-search-icon"></i>
+                </form>
+                <button class="nav-btn"><i class="fa-solid fa-user-plus"></i></button>
+                <button class="nav-btn">
+                    <i class="fa-regular fa-heart"></i>(<span id="count">0</span>)
+                </button>
+                <button class="nav-btn">
+                    <i class="fa-solid fa-bag-shopping"></i>(<span id="cart-count">0</span>)
+                </button>
+            </div>
+            <button class="nav-mobile-btn" id="mobileMenuBtn" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="nav-mobile" id="mobileMenu">
+            <a href="index.html" class="nav-mobile-link">Home</a>
+            <a href="#" class="nav-mobile-link">Shop</a>
+            <a href="#" class="nav-mobile-link">Product</a>
+            <a href="#" class="nav-mobile-link">Blog</a>
+            <a href="#" class="nav-mobile-link">Pages</a>
+        </div>
+    </nav>
+    <!-- main content -->
+    <main class="main-content">
+        <!-- Home top bar -->
+        <div class="home-topbar">
+            <a href="#" class="topbar-link"><i class="fa-solid fa-headset"></i>(220) 123 456 7890</a>
+            <ul class="topbar-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop/shop.html">SHOP</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">PAGES</a></li>
+            </ul>
+            <h1 class="topbar-right">
+                <i class="fa-solid fa-house"></i>FREE TRY AT HOME
+            </h1>
+        </div>
+
+        <!-- details -->
+        <div class="details">
+            <img class="details-img"
+                src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-3-breadcrumb.jpg?v=1742473987&width=1920"
+                alt="">
+            <div class="details-content">
+                <div class="details-crumb">
+                    <a href="index.html">Home</a>
+                    <span class="details-crumb-sep">-</span>
+                    <p>Rings</p>
+                </div>
+                <h2 class="details-title">Rings</h2>
+
+            </div>
+        </div>
+
+        <!-- Product page (converted from Product.jsx) -->
+        <section class="product-page">
+            <div class="product-page-layout">
+                <!-- Sidebar -->
+                <aside class="product-sidebar">
+                    <h1 class="product-sidebar-title">Categories</h1>
+
+                    <div class="product-sidebar-scroll">
+                        <label class="product-checkrow">
+                            <span class="product-checkrow-left">
+                                <input type="checkbox" value="18k-75" />
+                                <span>18K, 75.0%</span></a>
+                            </span>
+                            <span class="product-checkrow-count">(04)</span>
+                        </label>
+
+                        <label class="product-checkrow">
+                            <span class="product-checkrow-left">
+                                <input type="checkbox" />
+                                <span>22K, 91.7%</span>
+                            </span>
+                            <span class="product-checkrow-count">(02)</span>
+                        </label>
+
+                        <label class="product-checkrow">
+                            <span class="product-checkrow-left">
+                                <input type="checkbox" />
+                                <span>24K, 99.9%</span>
+                            </span>
+                            <span class="product-checkrow-count">(06)</span>
+                        </label>
+
+                        <label class="product-checkrow">
+                            <span class="product-checkrow-left">
+                                <input type="checkbox" />
+                                <span>Bangles</span>
+                            </span>
+                            <span class="product-checkrow-count">(05)</span>
+                        </label>
+
+                        <label class="product-checkrow">
+                            <span class="product-checkrow-left">
+                                <input type="checkbox" />
+                                <span>Best seller</span>
+                            </span>
+                            <span class="product-checkrow-count">(12)</span>
+                        </label>
+
+                        <label class="product-checkrow">
+                            <span class="product-checkrow-left">
+                                <input type="checkbox" />
+                                <span>Bracelets</span>
+                            </span>
+                            <span class="product-checkrow-count">(09)</span>
+                        </label>
+
+                        <label class="product-checkrow">
+                            <span class="product-checkrow-left">
+                                <input type="checkbox" />
+                                <span>Brooch</span>
+                            </span>
+                            <span class="product-checkrow-count">(12)</span>
+                        </label>
+
+                        <label class="product-checkrow">
+                            <span class="product-checkrow-left">
+                                <input type="checkbox" />
+                                <span>Chain</span>
+                            </span>
+                            <span class="product-checkrow-count">(11)</span>
+                        </label>
+
+                        <label class="product-checkrow">
+                            <span class="product-checkrow-left">
+                                <input type="checkbox" />
+                                <span>Diamond</span>
+                            </span>
+                            <span class="product-checkrow-count">(10)</span>
+                        </label>
+
+                        <label class="product-checkrow">
+                            <span class="product-checkrow-left">
+                                <input type="checkbox" />
+                                <span>Gold</span>
+                            </span>
+                            <span class="product-checkrow-count">(12)</span>
+                        </label>
+
+                        <label class="product-checkrow">
+                            <span class="product-checkrow-left">
+                                <input type="checkbox" />
+                                <span>Earring</span>
+                            </span>
+                            <span class="product-checkrow-count">(12)</span>
+                        </label>
+                    </div>
+
+                    <div class="product-divider"></div>
+                    <h1 class="product-filter-title">Filter</h1>
+                    <div class="product-divider"></div>
+
+                    <div class="product-filter-block">
+                        <h1 class="product-filter-title">Availability</h1>
+                        <div class="product-filter-meta">
+                            <div>0 selected</div>
+                            <button class="product-linkbtn" type="button">Reset</button>
+                        </div>
+                        <div class="product-filter-meta">
+                            <div><input type="checkbox" class="mr-2"/>In Stock</div>
+                            <div>(12)</div>
+                        </div>
+                        <div class="product-filter-meta" style="color:#a1a1aa;">
+                            <div><input type="checkbox" class="mr-2" />Out of Stock</div>
+                            <div>(0)</div>
+                        </div>
+                    </div>
+
+                    <div class="product-divider"></div>
+
+                    <div class="product-price">
+                        <h1 class="product-filter-title">Price</h1>
+                        <div class="product-filter-meta">
+                            <div>The highest price is Rs. 28.00</div>
+                            <button class="product-linkbtn" type="button">Reset</button>
+                        </div>
+                        <input class="product-range" type="range" min="0" max="28" value="3" />
+
+                        <div class="product-price-inputs">
+                            <div>
+                                <span class="product-money-label">From</span>
+                                <div class="product-money-box">
+                                    <span>₹</span>
+                                    <input type="number" min="0" max="27" value="0" />
+                                </div>
+                            </div>
+                            <span class="product-dash">-</span>
+                            <div>
+                                <span class="product-money-label">To</span>
+                                <div class="product-money-box">
+                                    <span>₹</span>
+                                    <input type="number" min="10" max="28" value="28" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-divider"></div>
+
+                    <div class="product-filter-block">
+                        <h1 class="product-filter-title">Color</h1>
+                        <div class="product-filter-meta">
+                            <div>0 selected</div>
+                            <button class="product-linkbtn" type="button">Reset</button>
+                        </div>
+
+                        <div class="product-sidebar-scroll">
+                            <div class="product-checkrow muted">
+                                <div><input type="checkbox" class="mr-2" />Beige</div>
+                                <div>(02)</div>
+                            </div>
+                            <div class="product-checkrow muted light">
+                                <div><input type="checkbox" class="mr-2" />Bronze</div>
+                                <div>(06)</div>
+                            </div>
+                            <div class="product-checkrow muted light">
+                                <div><input type="checkbox" class="mr-2" />Brown</div>
+                                <div>(05)</div>
+                            </div>
+                            <div class="product-checkrow muted light">
+                                <div><input type="checkbox" class="mr-2" />Gold</div>
+                                <div>(12)</div>
+                            </div>
+                            <div class="product-checkrow muted light">
+                                <div><input type="checkbox" class="mr-2" />Orange</div>
+                                <div>(09)</div>
+                            </div>
+                            <div class="product-checkrow muted light">
+                                <div><input type="checkbox" class="mr-2" />Rose Gold</div>
+                                <div>(01)</div>
+                            </div>
+                            <div class="product-checkrow muted light">
+                                <div><input type="checkbox" class="mr-2" />Yellow</div>
+                                <div>(07)</div>
+                            </div>
+                            <div class="product-checkrow muted light">
+                                <div><input type="checkbox" class="mr-2" />Silver</div>
+                                <div>(01)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-divider"></div>
+
+                    <div class="product-filter-block">
+                        <h1 class="product-filter-title">Special product</h1>
+                        <div class="product-special">
+                            <div class="product-special-item">
+                                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-46.jpg?v=1742445430"
+                                    alt="">
+                                <div>
+                                    <a class="product-special-link" href="#"> Drop gold earrings </a>
+                                    <div class="product-special-price">Rs. 15.00</div>
+                                </div>
+                            </div>
+                            <div class="product-special-item">
+                                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-product-16.jpg?v=1742445430"
+                                    alt="">
+                                <div>
+                                    <a class="product-special-link" href="#">Simple Pearl earrings</a>
+                                    <div class="product-special-price">Rs. 15.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-banner">
+                        <a href="#">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-collection-side-banner.jpg?v=1742637512&width=352"
+                                alt="">
+                        </a>
+                    </div>
+                </aside>
+
+                <!-- Main -->
+                <div class="product-main">
+                    <h1 class="product-main-title">Rings</h1>
+                    <img class="product-hero"
+                        src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-collection-banner.jpg?v=1742641202&width=1920"
+                        alt="">
+                    <p class="product-desc">
+                        Care for fiber: 30% more recycled polyester. We label garments manufactured using
+                        environmentally friendly technologies and raw materials with the Join Life label.
+                    </p>
+
+                    <div class="product-toolbar">
+                        <div class="product-viewbtns">
+                            <button class="product-iconbtn" type="button" aria-label="Grid view">
+                                <i class="fa-solid fa-border-all"></i>
+                            </button>
+                            <button class="product-iconbtn" type="button" aria-label="List view">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+
+                        <div class="product-sort">
+                            <p class="product-count">12 products</p>
+                            <label class="product-sort-label" for="sortBy">Sort by :</label>
+                            <select class="product-sort-select" id="sortBy">
+                                <option>Featured</option>
+                                <option selected>Best selling</option>
+                                <option>Alphabetically, A-Z</option>
+                                <option>Alphabetically, Z-A</option>
+                                <option>Price, low to high</option>
+                                <option>Price, high to low</option>
+                                <option>Date, new to old</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="product-divider"></div>
+
+                    <div class="product-cards" id="productPageCards"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-logo.png?v=1744805986&width=300"
+                    alt="" />
+                <!-- <h2>Jelwo</h2> -->
+                <p>
+                    <i class="fa-solid fa-location-dot"></i> 55 East 10th street, new
+                    york, ny 10003, united states
+                </p>
+                <div class="footer-contact">
+                    <div>
+                        <i class="fa-solid fa-phone"></i><span>+ (220) 123 456 7890</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i><span>demo123546@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Faq's</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Privacy & terms</h5>
+                <ul>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                    <li><a href="#">Shipping & return</a></li>
+                    <li><a href="#">Terms & condition</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Category</h5>
+                <ul>
+                    <li><a href="#">Rings</a></li>
+                    <li><a href="#">Earring</a></li>
+                    <li><a href="#">Pendant</a></li>
+                    <li><a href="#">Necklaces</a></li>
+                    <li><a href="#">Bracelets</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Visit store</h5>
+                <p>
+                    Mon - sat : 10am - 11pm<br />Sun : 10am - 4pm<br />7 Days a week
+                </p>
+            </div>
+            <div class="footer-bottom-row">
+                <ul class="footer-social">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+                <form class="footer-subscribe">
+                    <h1>Subscribe and get 15% discount.</h1>
+                    <input type="email" placeholder="Enter your email" />
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+        <hr class="footer-hr" />
+        <div class="footer-copy">
+            <p>Copyright © 2026 by spacingtech</p>
+            <img src="https://suxnix-dev.myshopify.com/cdn/shop/files/card_img_7d7d11a3-0daa-4469-956c-846a4c9b8acf.png?v=1737133834"
+                alt="Payment methods" />
+        </div>
+    </footer>
+    <!-- Back to Top -->
+    <button id="backToTop" aria-label="Back to top">↑</button>
+    <script>
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+    <!-- JS: library first, then your project script -->
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="scripte.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Glitter Diamond Ring | Join Life</title>
+    
+</head>
+
+<body>
+    <div class="product-card">
+        <div class="product-grid">
+            <!-- LEFT: PHOTO SECTION - COMPLETELY EMPTY (reserved for your image) -->
+            <div class="photo-placeholder" aria-label="Product image space — ready for your photo"></div>
+
+            <!-- RIGHT: PRODUCT DETAILS -->
+            <div class="product-details">
+                <h1 class="product-title">Glitter diamond ring</h1>
+
+                <div class="price-section">
+                    <div class="current-price">Rs. 10.00 <span>incl. tax</span></div>
+                    <div class="tax-info">
+                        <span>Tax included.</span>
+                        <span class="shipping-note">🚚 Shipping calculated at checkout.</span>
+                    </div>
+                </div>
+
+                <div class="stock-badge">
+                    <span class="star-icon">⭐</span> 16 in stock
+                </div>
+
+                <!-- Care & Join Life Label section (exactly as described) -->
+                <div class="care-message">
+                    <div>♻️ Care for fiber: 30% more recycled polyester.</div>
+                    <div style="margin-top: 6px;">We label garments manufactured using environmentally friendly
+                        technologies and raw materials with the Join Life label.</div>
+                    <div class="join-life-badge">Join Life</div>
+                </div>
+
+                <div class="attributes">
+                    <!-- Size selection: 28, 29, 30 -->
+                    <div class="size-selector">
+                        <span class="attr-label">Size</span>
+                        <div class="size-buttons" id="sizeButtonsContainer">
+                            <button data-size="28" class="size-btn active">28</button>
+                            <button data-size="29" class="size-btn">29</button>
+                            <button data-size="30" class="size-btn">30</button>
+                        </div>
+                    </div>
+
+                    <!-- Color: Beige (displayed with swatch) -->
+                    <div class="color-row">
+                        <span class="attr-label">Color</span>
+                        <div class="color-swatch">
+                            <div class="beige-dot"></div>
+                            <span style="font-weight: 500;">Beige</span>
+                        </div>
+                    </div>
+
+                    <!-- Quantity: plus/minus with max based on stock (16) -->
+                    <div class="quantity-section">
+                        <span class="attr-label">Quantity</span>
+                        <div class="quantity-selector">
+                            <button class="qty-btn" id="decreaseQty" aria-label="Decrease quantity">−</button>
+                            <span class="quantity-number" id="quantityValue">1</span>
+                            <button class="qty-btn" id="increaseQty" aria-label="Increase quantity">+</button>
+                        </div>
+                        <div class="product-footer-note" id="stockNote">Only 16 available</div>
+                    </div>
+
+                    <!-- action buttons -->
+                    <div class="action-buttons">
+                        <button class="btn-primary" id="addToCartBtn">ADD TO CART</button>
+                        <button class="btn-secondary" id="buyNowBtn">BUY IT NOW</button>
+                    </div>
+                    <div class="product-footer-note" style="margin-top: 0;">
+                        ✨ Ethically crafted • Join Life certified
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

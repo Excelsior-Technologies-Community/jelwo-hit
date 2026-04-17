@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelwo - Jewelry Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a class="nav-logo" href="#"><img
+                    src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-logo.png?v=1744805986&width=500"
+                    alt=""></a>
+            <span class="nav-sep">|</span>
+            <h1 class="nav-tagline">Free UK standard delivery on all orders.</h1>
+            <div class="nav-actions">
+                <form class="nav-search">
+                    <input type="text" placeholder="Search product...">
+                    <i class="fa-solid fa-search nav-search-icon"></i>
+                </form>
+                <button class="nav-btn"><i class="fa-solid fa-user-plus"></i></button>
+                <button class="nav-btn"><i class="fa-regular fa-heart"></i>(<span id="count">0</span>)</button>
+                <button class="nav-btn"><i class="fa-solid fa-bag-shopping"></i>(<span
+                        id="cart-count">0</span>)</button>
+            </div>
+            <button class="nav-mobile-btn" id="mobileMenuBtn" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="nav-mobile" id="mobileMenu">
+            <a href="#" class="nav-mobile-link">Home</a>
+            <a href="#" class="nav-mobile-link">Shop</a>
+            <a href="#" class="nav-mobile-link">Product</a>
+            <a href="#" class="nav-mobile-link">Blog</a>
+            <a href="#" class="nav-mobile-link">Pages</a>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home top bar -->
+        <div class="home-topbar">
+            <a href="#" class="topbar-link"><i class="fa-solid fa-headset"></i>(220) 123 456 7890</a>
+            <ul class="topbar-nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">PAGES</a></li>
+            </ul>
+            <h1 class="topbar-right"><i class="fa-solid fa-house"></i>FREE TRY AT HOME</h1>
+        </div>
+
+        <!-- Hero Slider -->
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="hero-slide">
+                        <div class="hero-content">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-slider-label.png?v=1742534520&width=352"
+                                alt="">
+                            <h2>Jewelry made with<br>love</h2>
+                            <button class="btn-shop">SHOP NOW</button>
+                        </div>
+                        <a href="#"><img class="hero-img"
+                                src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-slider-2.jpg?v=1742540741&width=3840"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-slide">
+                        <div class="hero-content">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-slider-label.png?v=1742534520&width=352"
+                                alt="">
+                            <h2>Jewelry is our<br>passion</h2>
+                            <button class="btn-shop">SHOP NOW</button>
+                        </div>
+                        <a href="#"><img class="hero-img"
+                                src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-slider-1.jpg?v=1742540741&width=3840"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-slide">
+                        <div class="hero-content">
+                            <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-slider-label.png?v=1742534520&width=352"
+                                alt="">
+                            <h2>Elegance is our<br>obsession</h2>
+                            <button class="btn-shop">SHOP NOW</button>
+                        </div>
+                        <a href="#"><img class="hero-img"
+                                src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-slider-3.jpg?v=1742540741&width=3840"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next hero-next">&#8594;</div>
+            <div class="swiper-button-prev hero-prev">&#8592;</div>
+        </div>
+
+        <!-- Banner strip -->
+        <div class="banner-strip">
+            <h1>DIAMONDS FOR EVERY EXCUSE 1500+ DESIGNS UNDER <span class="badge">$200</span></h1>
+        </div>
+
+        <!-- Two banners -->
+        <div class="banners-row">
+            <div class="banner-card">
+                <div class="banner-card-content right">
+                    <h1>GET A 30% DISCOUNT</h1>
+                    <h2>Exquisite<br>collection</h2>
+                    <button class="btn-shop">SHOP NOW</button>
+                </div>
+                <a href="#"><img
+                        src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-banner-1.jpg?v=1742541671&width=660"
+                        alt=""></a>
+            </div>
+            <div class="banner-card">
+                <div class="banner-card-content left">
+                    <h1>20% OFF ON WASTAGE</h1>
+                    <h2>Diamond<br>necklace</h2>
+                    <button class="btn-shop">SHOP NOW</button>
+                </div>
+                <a href="#"><img
+                        src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-banner-2.jpg?v=1742541712&width=660"
+                        alt=""></a>
+            </div>
+        </div>
+
+        <!-- Popular category -->
+         <div class="section">
+            <h1 class ="section-title">Popular category</h1>
+            <div class="swiper category-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="category-card">
+                            <div class="category-info">
+                                <h1>10+ Items</h1>
+                                <h2>Rings</h2>
+                                <a href="#">SHOP NOW</a>
+                            </div>
+                            <a href="#"><img
+                                    src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-category-1.jpg?v=1742541758&width=660"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="https://jelwo.myshopify.com/cdn/shop/files/jewelry-4-logo.png?v=1744805986&width=300"
+                        alt="">
+                    <!-- <h2>Jelwo</h2> -->
+                    <p><i class="fa-solid fa-location-dot"></i> 55 East 10th street, new york, ny 10003, united states
+                    </p>
+                    <div class="footer-contact">
+                        <div><i class="fa-solid fa-phone"></i><span>+ (220) 123 456 7890</span></div>
+                        <div><i class="fa-solid fa-envelope"></i><span>demo123546@gmail.com</span></div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Faq's</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Privacy & terms</h5>
+                    <ul>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Refund policy</a></li>
+                        <li><a href="#">Shipping & return</a></li>
+                        <li><a href="#">Terms & condition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Category</h5>
+                    <ul>
+                        <li><a href="#">Rings</a></li>
+                        <li><a href="#">Earring</a></li>
+                        <li><a href="#">Pendant</a></li>
+                        <li><a href="#">Necklaces</a></li>
+                        <li><a href="#">Bracelets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Visit store</h5>
+                    <p>Mon - sat : 10am - 11pm<br>Sun : 10am - 4pm<br>7 Days a week</p>
+                </div>
+                <div class="footer-bottom-row">
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                    <form class="footer-subscribe">
+                        <h1>Subscribe and get 15% discount.</h1>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="footer-hr" />
+            <div class="footer-copy">
+                <p>Copyright © 2026 by spacingtech</p>
+                <img src="https://suxnix-dev.myshopify.com/cdn/shop/files/card_img_7d7d11a3-0daa-4469-956c-846a4c9b8acf.png?v=1737133834"
+                    alt="Payment methods">
+            </div>
+        </footer>
+
+        <!-- Back to Top -->
+        <button id="backToTop" aria-label="Back to top">↑</button>
+        <script>
+            const backToTopBtn = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+            });
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Simple slider swap + previous/next arrow control
+            const sliderSlides = document.querySelectorAll('.hero-swiper .swiper-slide');
+            const nextButton = document.querySelector('.swiper-button-next');
+            const prevButton = document.querySelector('.swiper-button-prev');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                if (index < 0) {
+                    index = sliderSlides.length - 1;
+                } else if (index >= sliderSlides.length) {
+                    index = 0;
+                }
+
+                sliderSlides.forEach((slide, i) => {
+                    slide.classList.toggle('active-slide', i === index);
+                });
+                currentSlide = index;
+            }
+
+            nextButton.addEventListener('click', () => showSlide(currentSlide + 1));
+            prevButton.addEventListener('click', () => showSlide(currentSlide - 1));
+
+            // Start with first slide (after swap done in HTML order)
+            showSlide(0);
+        </script>
+</body>
+
+</html>

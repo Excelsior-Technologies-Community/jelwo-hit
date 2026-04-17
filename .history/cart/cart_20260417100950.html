@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right Side Cart</title>
+    <link rel="stylesheet" href=".css">
+</head>
+
+<body>
+
+    <!-- Product -->
+    <div class="product">
+        <h2>Shoes</h2>
+        <p>₹999</p>
+        <button onclick="openCart()">Add to Cart</button>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart" id="cart">
+        <div class="cart-header">
+            <h2>My Cart</h2>
+            <span onclick="closeCart()">✖</span>
+        </div>
+
+        <div class="cart-items">
+            <p>Shoes - ₹999</p>
+        </div>
+
+        <div class="cart-footer">
+            <button>Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
